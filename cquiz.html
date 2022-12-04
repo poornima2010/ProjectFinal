@@ -1,0 +1,138 @@
+<html>
+<head>
+<title>Quiz page</title>
+<style>
+body{
+background-color: cyan;
+font-family: cursive;
+font-size: x-large;
+}
+.btn{
+width : 150px;
+padding : 10px;
+margin: 5px;
+border-radius: 11px;
+font-size: 18px;
+    border : 1px solid #999;
+    background: lightcoral;
+    cursor: pointer;
+
+}
+.ques{
+         width : 80%;
+    box-shadow: 5px 2px 5px 2px rgba(0, 0.3, 0, 0.3);
+    background: #fff;
+    padding: 15px;
+         
+}
+</style>
+</head>
+<body>
+<div class="ques">
+      Q1.who is the father of C language?<br>
+        <input type="radio" name="x">Steve jobs<br>
+        <input type="radio" name="x">james Goslin<br>
+        <input type="radio" id="correct" name="x">Dnnis Ritchie<br>
+        <input type="radio" name="x">Rasmus Lerdorf<br>
+       
+        Q2.which of the valide C variable name?<br>
+        <input type="radio" name="xx">int number<br>
+        <input type="radio" name="xx" >float rate<br>
+        <input type="radio" name="xx">int variable_count<br>
+        <input type="radio" id="correct1" name="xx">int $main<br>
+       
+        Q3.All keywords in C are in?<br>
+        <input type="radio" id="correct2" name="xxx">Lowercase letters<br>
+        <input type="radio" name="xxx">Uppercase letter<br>
+        <input type="radio" name="xxx">CamelCase letter<br>
+        <input type="radio" name="xxx">None of the above<br>
+       
+        Q4.which key wors is used to prevent any changes in the variable within a c?<br>
+        <input type="radio" name="xxxx">immutable<br>
+        <input type="radio" name="xxxx">mutable<br>
+       
+        <input type="radio" id="correct3" name="xxxx">const<br>
+        <input type="radio" name="xxxx">volatile<br>
+       
+        Q5. what is an example of iteration in C<br>
+        <input type="radio" name="y">for<br>
+        <input type="radio" name="y">while<br>
+        <input type="radio" name="y">do-while<br>
+        <input type="radio" id="correct4" name="y">All of the above<br>
+       
+        Q6.Function can return enumeration constants in C?<br>
+        <input type="radio" id="correct5" name="yy">True<br>
+        <input type="radio" name="yy">False<br>
+        <input type="radio"  name="yy">depends on the compilers<br>
+        <input type="radio"  name="yy">depends in the standareds<br>
+       
+        Q7.Functions in C Language are always?<br>
+        <input type="radio"  name="yyy">internal<br>
+        <input type="radio" id="correct6" name="yyy">External<br>
+        <input type="radio" name="yyy" >Both<br>
+        <input type="radio" name="yyy">None<br>
+       
+        Q8.what is #include<stdio.h> ?<br>
+        <input type="radio" id="correct7" name="yyyy">preprocessor directive<br>
+        <input type="radio" name="yyyy">inclusion directive<br>
+        <input type="radio" name="yyyy">file inclusion directive<br>
+        <input type="radio" name="yyyy">none of the above<br>
+           
+        Q9. in C language, File is of which data type?<br>
+        <input type="radio" name="w">int<br>
+        <input type="radio" name="w">char*<br>
+        <input type="radio" id="correct8" name="w">struct<br>
+        <input type="radio" name="w">none of the above<br>
+       
+        Q10.what is the size of "char" in 32-bit C?<br>
+        <input type="radio" name="wx">1 bit<br>
+        <input type="radio" name="wx">2 bit<br>
+        <input type="radio" id="correct9" name="wx">1 byte=5<br>
+        <input type="radio" name="wx">2 byte<br>
+
+    </div>
+    <form>
+    <center><input type="submit" value="SubmitQuiz" class="btn" onclick="result()"></center>
+    <center><button type="submit" class="btn" method='get' formaction="/subjects">ExitQuiz</button></center>
+   </form>
+    <script>
+    function result(){
+    var score = 0;
+    if(document.getElementById('correct').checked){
+    score++;
+    }  
+       if(document.getElementById('correct1').checked){
+    score++;
+    }  
+    if(document.getElementById('correct2').checked){
+    score++;
+    }
+    if(document.getElementById('correct3').checked){
+    score++;
+    }
+    if(document.getElementById('correct4').checked){
+    score++;
+    }
+    if(document.getElementById('correct5').checked){
+    score++;
+    }
+    if(document.getElementById('correct6').checked){
+    score++;
+    }
+    if(document.getElementById('correct7').checked){
+    score++;
+    }
+    if(document.getElementById('correct8').checked){
+    score++;
+    }
+    if(document.getElementById('correct9').checked){
+    score++;
+    }
+    alert("Your Score is : " + score + "/10");
+    }
+   
+
+    </script>
+   
+</body>
+</html>

@@ -1,0 +1,78 @@
+<html>
+    <head>
+        <title>Login page</title>
+        <style>
+            body{
+    margin:0;
+    padding: 0;
+    font-family: sans-serif;
+    background-image:url('https://c8.alamy.com/comp/EW6GC9/website-and-internet-concept-with-quiz-word-sign-on-cubes-with-reflection-EW6GC9.jpg') ;
+    background-size: cover;
+    background-position: center;
+}
+.login-form{
+    width: 300px;
+   box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.3);
+   background: #fff;
+   padding: 20px;
+   margin: 8% auto;
+   text-align: center;
+}
+.login-form h1{
+    color: #1cbadb;
+    margin-bottom:30px;
+
+}
+.input-box{
+    border: 20px;
+    padding: 10px;
+    margin: 10px;
+    width: 100%;
+    border: 1px solid #999;
+    outline: none;
+}
+button{
+    color: #ffff;
+    width: 100%;
+    padding: 10px;
+   border-radius: 20px;
+   font-size: 15px;
+   margin: 10px 0;
+   border: none;
+   outline: none;
+   cursor: pointer;
+}
+.login-btn{
+   width : 301px;
+    padding : 10px;
+    margin: 5px;
+    border-radius: 11px;
+    font-size: 18px;
+    border : 1px solid #999;
+    background: skyblue;
+    cursor: pointer;
+}
+
+
+img{
+    width: 70px;
+    margin-top: 20px;
+   
+}
+</style>
+     
+    </head>
+    <body>
+       
+        <div class="login-form">
+            <img src="https://cdn-icons-png.flaticon.com/128/3293/3293466.png">
+             <h1>Login Here</h1>
+             <form method='get' action="/loginsubmit">
+
+                <input type="email" class="input-box" placeholder="Your Email" name=username required><br>
+                <input type="password" class="input-box" placeholder="Your password" name=password required> <br>
+                <input type="submit" class="login-btn" value="submit"/>
+             </form>
+        </div>
+    </body>
+</html>

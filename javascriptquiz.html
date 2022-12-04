@@ -1,0 +1,180 @@
+<html>
+<head>
+<title>Quiz page</title>
+<style>
+body{
+background-color: cyan;
+font-family: cursive;
+font-size: x-large;
+}
+.btn{
+width : 150px;
+padding : 10px;
+margin: 5px;
+border-radius: 11px;
+font-size: 18px;
+    border : 1px solid #999;
+    background: lightcoral;
+    cursor: pointer;
+
+}
+.ques{
+         width : 80%;
+    box-shadow: 5px 2px 5px 2px rgba(0, 0.3, 0, 0.3);
+    background: #fff;
+    padding: 15px;
+         
+}
+</style>
+</head>
+<body>
+<div class="ques">
+Q1.Which type of JavaScript language is _<br>
+<input type="radio" name="xxx">Object Oriented<br>
+<input type="radio" id="correct" name="xxx">Object-based<br>
+<input type="radio" name="xxx">Assembly-language<br>
+<input type="radio" name="xxx">High-level<br>
+
+
+Q2. Which of the following is the correct output for the following JavaScript code:
+varx=5,y=1  
+    var obj ={ x:10}  
+    with(obj)  
+   {  
+      alert(y)  
+   }
+     <br>
+<input type="radio" id="correct1" name="xx">1<br>
+<input type="radio" name="xx" >Error<br>
+<input type="radio" name="xx">10<br>
+<input type="radio" name="xx">5<br>
+
+Q3.Which one of the following also known as Conditional Expression:-<br>
+<input type="radio"  name="x">Alternative to if-else<br>
+<input type="radio"   name="x">Switch statement<br>
+<input type="radio"  name="x">If-then-else statement<br>
+<input type="radio" id="correct2"  name="x">immediate if<br>
+
+Q4. Among the following given JavaScript snipped codes, which is more efficient:-
+Code A
+
+for(var number=10;number>=1;number--)  
+{  
+document.writeln(number);  
+}
+
+Code B
+
+var number=10;  
+while(number>=1)  
+{  
+document.writeln(number);  
+       number++;  
+}
+
+<br>
+<input type="radio"  id="correct3"  name="xxx1">code 1<br>
+<input type="radio"  name="xxx1"> code 2 <br>
+<input type="radio"  name="xxx1">both<br>
+<input type="radio"  name="xxx1">cannot compare<br>
+
+    Q5.In JavaScript, what is a block of statement?-<br>
+<input type="radio"  name="xx1">Conditional block<br>
+<input type="radio" id="correct4"  name="xx1">block that combines a number of statements into a single compound statement<br>
+<input type="radio"  name="xx1">both conditional block and a single statement<br>
+<input type="radio"  name="xx1">block that contains a single statement<br>
+ Q6.When interpreter encounters an empty statements, what it will do:-<br>
+<input type="radio" name="xxx">Shows a warning<br>
+<input type="radio" name="xxx">Prompts to complete the statement<br>
+<input type="radio" name="xxx">Throws an error<br>
+<input type="radio" id="correct5" name="xxx">Ignores the statements<br>
+
+Q7. The "function" and " var" are known as:-<br>
+<input type="radio" name="x1">Keywords<br>
+<input type="radio" name="x1">Data types<br>
+<input type="radio" id="correct6" name="x1">Declaration statements<br>
+<input type="radio" name="x1">Prototypes<br>
+
+Q8. In the following given syntax of the switch statement, the Expression is compared with the labels using which one of the following operators?
+switch(expression)  
+{  
+    statements  
+}<br>
+<input type="radio" id="correct7" name="x2">===<br>
+<input type="radio"   name="x2">equals<br>
+<input type="radio"   name="x2" >==<br>
+<input type="radio"   name="x2">equal<br>
+
+Q9.What will happen, if the following JavaScript code is executed?
+var count =0;  
+while (count <10)  
+{  
+     console.log(count);  
+     count++;  
+}  <br>
+<input type="radio" name="xxx2">An error is displayed<br>
+<input type="radio" name="xxx2" >An exception is thrown<br>
+<input type="radio" id="correct8" name="xxx2">The values of count variable are logged or stored in a particular location or storage<br>
+<input type="radio" name="xxx2">The value of count from 0 to 9 is displayed in the console<br>
+
+Q10.Which of the following is the correct output for the following JavaScript code:
+
+Int x=8;  
+if(x>9)  
+{  
+document.write(9);  
+}  
+else  
+{  
+document.write(x);  
+}<br>
+<input type="radio"  name="xxx3">9<br>
+<input type="radio"  name="xxx3" >0<br>
+<input type="radio" id="correct9"  name="xxx3" >8<br>
+<input type="radio"  name="xxx3">undefined<br>
+    </div>
+    <form>
+    <center><input type="submit" value="SubmitQuiz" onclick="result()" class="btn"></center>
+    <center><button type="submit"nmethod='get' formaction="/subjects" class="btn">ExitQuiz</button></center>
+</form>
+    <script>
+
+    function result(){
+    var score = 0;
+    if(document.getElementById('correct').checked){
+    score++;
+    }  
+       if(document.getElementById('correct1').checked){
+    score++;
+    }
+    if(document.getElementById('correct2').checked){
+    score++;
+    }
+    if(document.getElementById('correct3').checked){
+    score++;
+    }
+    if(document.getElementById('correct4').checked){
+    score++;
+    }
+    if(document.getElementById('correct5').checked){
+    score++;
+    }
+    if(document.getElementById('correct6').checked){
+    score++;
+    }
+    if(document.getElementById('correct7').checked){
+    score++;
+    }
+    if(document.getElementById('correct8').checked){
+    score++;
+    }
+    if(document.getElementById('correct9').checked){
+    score++;
+    }
+    alert("Your Score is : " + score + "/10");
+    }
+   
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,139 @@
+<html>
+<head>
+<title>Quiz page</title>
+<style>
+body{
+background-color: cyan;
+font-family: cursive;
+font-size: x-large;
+}
+.btn{
+width : 150px;
+padding : 10px;
+margin: 5px;
+border-radius: 11px;
+font-size: 18px;
+    border : 1px solid #999;
+    background: lightcoral;
+    cursor: pointer;
+
+}
+.ques{
+         width : 80%;
+    box-shadow: 5px 2px 5px 2px rgba(0, 0.3, 0, 0.3);
+    background: #fff;
+    padding: 15px;
+         
+}
+</style>
+</head>
+<body>
+<div class="ques">
+Q1. What is the maximum possible length of an identifier?<br>
+<input type="radio"  name="xxx">16<br>
+<input type="radio" name="xxx">32<br>
+<input type="radio"  name="xxx">64<br>
+<input type="radio" id="correct"  name="xxx">None of these<br>
+
+Q2.In which year was the Python language developed?<br>
+<input type="radio"  name="xx">1995<br>
+<input type="radio" name="xx">1972<br>
+<input type="radio" name="xx">1981<br>
+<input type="radio" id="correct1"  name="xx">1989<br>
+
+    Q3.Who developed the Python language?<br>
+<input type="radio"  name="x">Zim Den<br>
+<input type="radio"  id="correct2"  name="x">Guido van Rossum<br>
+<input type="radio"  name="x">Niene Stom<br>
+<input type="radio"  name="x">Wick van Rossum<br>
+
+Q4. In which language is Python written?<br>
+<input type="radio"  name="xxx1">English<br>
+<input type="radio"  name="xxx1">PHP<br>
+<input type="radio" id="correct3"  name="xxx1">C<br>
+<input type="radio"  name="xxx1">All the above<br>
+
+Q5.  Which one of the following is the correct extension of the Python file?<br>
+<input type="radio" id="correct4"  name="xx1">.py<br>
+<input type="radio"  name="xx1">.python<br>
+<input type="radio"  name="xx1">.p<br>
+<input type="radio"  name="xx1">None of the above<br>
+
+Q6.In which year was the Python 3.0 version developed?<br>
+<input type="radio" id="correct5" name="xxx">2008<br>
+<input type="radio"  name="xxx">2000<br>
+<input type="radio"  name="xxx">2010<br>
+<input type="radio"  name="xxx">2005<br>
+
+Q7.What do we use to define a block of code in Python language?<br>
+<input type="radio"  name="x1">Key<br>
+<input type="radio"  name="x1">Brackets<br>
+<input type="radio" id="correct6"  name="x1">Indentation<br>
+<input type="radio"  name="x1">None<br>
+
+Q8.Which character is used in Python to make a single line comment?<br>
+<input type="radio"  name="x2">/<br>
+<input type="radio"  name="x2">//<br>
+<input type="radio" id="correct7"  name="x2">#<br>
+<input type="radio"  name="x2">!<br>
+   
+    Q9. Which of the following statements is correct regarding the object-oriented programming concept in Python?<br>
+<input type="radio"  name="xxx2">Classes are real-world entities while objects are not real<br>
+<input type="radio" id="correct8"  name="xxx2">Objects are real-world entities while classes are not real<br>
+<input type="radio"  name="xxx2">Both objects and classes are real-world entities<br>
+<input type="radio"  name="xxx2">All the above<br>
+
+Q10.Which of the following declarations is incorrect?<br>
+<input type="radio"  name="xxx3">_x=2<br>
+<input type="radio"  name="xxx3">__x=3<br>
+<input type="radio"  name="xxx3">__xyz__=5<br>
+<input type="radio"  id="correct9"  name="xxx3">None of these<br>
+
+    </div>
+    <form>
+    <center><input type="submit" value="SubmitQuiz" class="btn" onclick="result()"></center>
+    <center><button type="submit" method='get' formaction = "/subjects" class="btn">ExitQuiz</button></center>
+    </form>
+    <script>
+    function result(){
+    var score = 0;
+    if(document.getElementById('correct').checked){
+    score++;
+    }  
+       if(document.getElementById('correct1').checked){
+    score++;
+    }  
+    if(document.getElementById('correct2').checked){
+    score++;
+    }
+    if(document.getElementById('correct3').checked){
+    score++;
+    }
+    if(document.getElementById('correct4').checked){
+    score++;
+    }
+    if(document.getElementById('correct5').checked){
+    score++;
+    }
+    if(document.getElementById('correct6').checked){
+    score++;
+    }
+    if(document.getElementById('correct7').checked){
+    score++;
+    }
+    if(document.getElementById('correct8').checked){
+    score++;
+    }
+    if(document.getElementById('correct9').checked){
+    score++;
+    }
+    alert("Your score is:" + score + "/10");
+
+
+    }
+   
+
+    </script>
+   
+</body>
+</html>
